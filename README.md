@@ -1,5 +1,10 @@
 # 2025 股東會紀念品 (綠色/藍綠色底)
 
+## GitHub Pages
+
+- 目前已設定 GitHub Actions，當推送到 `main` 分支時會自動部署 GitHub Pages。
+- 部署內容為 repo 根目錄中的靜態頁面檔案：`index.html`、`style.css`、`script.js`、`data.js`。
+
 - [ ] **1101 台泥** (最後買進日: 03-19買)
   - 股東會紀念品或股東優待: 折疊環保提包
   - 2025年紀念品: 多功能雙色蓋毯
