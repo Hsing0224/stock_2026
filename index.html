@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 股東會紀念品 Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-glass"></div>
+    <div class="container">
+        <header>
+            <h1>股東會紀念品 Tracker</h1>
+            <p>2025 年紀念品追蹤 (綠色/藍綠色底)</p>
+            <div class="stats">
+                <span>已收集: <strong id="collected-count">0</strong></span>
+                <span>剩餘: <strong id="remaining-count">0</strong></span>
+                <span>總計: <strong id="total-count">0</strong></span>
+            </div>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="搜尋公司代號或名稱...">
+                <div class="filter-toggles">
+                    <button class="filter-btn active" data-filter="all">全部</button>
+                    <button class="filter-btn" data-filter="checked">已收集</button>
+                    <button class="filter-btn" data-filter="unchecked">未收集</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="table-container">
+                <table id="stockTable">
+                    <thead>
+                        <tr>
+                            <th>狀態</th>
+                            <th>公司</th>
+                            <th>最後買進日</th>
+                            <th>2026年起 股東優待</th>
+                            <th>2025年紀念品</th>
+                        </tr>
+                    </thead>
+                    <tbody id="stock-list">
+                        <!-- Items rendered by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        
+        <div id="toast" class="toast hidden">已儲存狀態</div>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
